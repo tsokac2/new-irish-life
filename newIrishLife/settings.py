@@ -83,7 +83,6 @@ AUTHENTICATION_BACKENDS = [
 ]
 
 SITE_ID = 1
-
 ACCOUNT_AUTHENTICATION_METHOD = 'username_email'
 ACCOUNT_EMAIL_REQUIRED = True
 ACCOUNT_EMAIL_VERIFICATION = "mandatory"
@@ -93,7 +92,6 @@ LOGIN_URL = "/accounts/login/"
 LOGIN_REDIRECT_URL = "/"
 
 WSGI_APPLICATION = 'newIrishLife.wsgi.application'
-
 
 if 'DATABASE_URL' in os.environ:
     DATABASES = {
@@ -106,8 +104,6 @@ else:
             'NAME': str(os.path.join(BASE_DIR, "db.sqlite3")),
         }
     }
-
-
 
 AUTH_PASSWORD_VALIDATORS = [
     {
