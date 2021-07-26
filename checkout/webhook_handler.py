@@ -106,7 +106,7 @@ class StripeWH_Handler:
             order = None
             try:
                 order = Order.objects.create(
-                    name=shipping_details.full_name,
+                    full_name=shipping_details.name,
                     email=billing_details.email,
                     phone_number=shipping_details.phone,
                     country=shipping_details.address.country,
