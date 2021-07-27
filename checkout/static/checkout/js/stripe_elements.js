@@ -11,11 +11,13 @@ var cardNumber = elements.create('cardNumber',  {
         invalid: "card-error"
     }
 });
+
 var cardExpiry = elements.create('cardExpiry', {
     classes : {
         invalid: "card-error"
     }
 });
+
 var cardCvc = elements.create('cardCvc');
 
 cardNumber.mount('#card-number');
